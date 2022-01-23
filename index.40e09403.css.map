@@ -1,1 +1,0 @@
-{"mappings":"AAAA,KACA,WACA,CACA,wBACA,WACA,CAEA,uBACA,YACA","sources":["styles/index.css"],"sourcesContent":["body {\n    width: 100vw;\n}\n.terminal-prompt::before {\n    content: \" \";\n}\n\n.terminal-prompt::after {\n    display: none;\n}\n"],"names":[],"version":3,"file":"index.40e09403.css.map"}
