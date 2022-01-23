@@ -15,7 +15,8 @@ local:
 	parcel serve --dist-dir .dist index.html
 preview: build
 	git checkout gh-pages
-	rm -rfv !('CNAME')
+	rm -rf
+	git restore CNAME
 	cp -r .dist/* .
 	git add --all
 	git commit 
