@@ -15,7 +15,7 @@ local:
 	parcel serve --dist-dir .dist index.html
 preview: build
 	git checkout gh-pages
-	rm -rf
+	rm -rf *
 	git restore CNAME
 	cp -r .dist/* .
 	git add --all
