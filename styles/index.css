@@ -1,10 +1,105 @@
+:root {
+    --global-font-size: 15px;
+    --global-line-height: 1.4em;
+    --global-space: 10px;
+    --font-stack: Menlo, Monaco, Lucida Console, Liberation Mono,
+        DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace,
+        serif;
+    --mono-font-stack: Menlo, Monaco, Lucida Console, Liberation Mono,
+        DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace,
+        serif;
+    --background-color: #000000;
+    --page-width: 60em;
+    --font-color: #151515;
+    --invert-font-color: #fff;
+    --primary-color: #00a02d;
+    --secondary-color: #727578;
+    --error-color: #d20962;
+    --progress-bar-background: #727578;
+    --progress-bar-fill: #151515;
+    --code-bg-color: #e8eff2;
+    --input-style: solid;
+    --display-h1-decoration: none;
+}
+
 body {
     width: 100vw;
+    overflow-x: hidden;
+    color: var(--primary-color);
+}
+header{
+    width: 100%;
+}
+h1{
+    text-align: center !important;
+    display: block !important;
 }
 .terminal-prompt::before {
     content: " ";
 }
-
 .terminal-prompt::after {
     display: none;
+}
+.terminal-nav{
+    border-bottom: 1px dashed var(--primary-color);
+}
+.terminal-menu li a{
+    color: var(--primary-color) !important;
+}
+
+.main{
+    width: 100%;
+    height: 87vh;
+    border-bottom: 1px dashed var(--primary-color);
+}
+.main .circle1,.main .circle{
+
+}
+.sec1 .btns{
+    width: 100%;
+    padding-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+.sec1 .btns .btn{
+    border: 2px dashed var(--primary-color);
+    background: var(--background-color);
+    color: var(--primary-color);
+}
+.sec1 .btns .btn1{
+    margin-right: 3rem;
+}
+.sec1 .content{
+    text-align: center;
+    padding-bottom: 2rem;
+}
+.sec1 .content::after{
+    content: "";
+    animation: cursor 800ms infinite;
+    background: var(--primary-color);
+    border-radius: 0;
+    display: inline-block;
+    height: 1em;
+    margin-left: 0.2em;
+    width: 3px;
+    bottom: -2px;
+    position: relative;
+  }
+.sec2,.sec3,.sec4,.sec5{
+    width: 100%;
+    padding-top: 2rem;
+}
+.sec2 .dot-line{
+    width: 20%;
+    border-bottom: 1px dashed var(--primary-color);
+}
+footer{
+    border-top: 1px dashed var(--primary-color);
+}
+footer .copy{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
