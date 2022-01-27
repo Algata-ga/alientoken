@@ -20,7 +20,7 @@ preview: build
 	cp -r .dist/* .
 	git add --all
 	git commit 
-	git push --force
+	git push --force origin/gh-pages gh-pages
 	git checkout main
 deploy: build
 	mv .dist ${SITE_NAME}
