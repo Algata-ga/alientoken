@@ -27,10 +27,10 @@ body {
     overflow-x: hidden;
     color: var(--primary-color);
 }
-header{
+header {
     width: 100%;
 }
-h1{
+h1 {
     text-align: center !important;
     display: block !important;
 }
@@ -40,22 +40,22 @@ h1{
 .terminal-prompt::after {
     display: none;
 }
-.terminal-nav{
+.terminal-nav {
     border-bottom: 1px dashed var(--primary-color);
 }
-.terminal-menu li a{
+.terminal-menu li a {
     color: var(--primary-color) !important;
 }
 
-.main{
+.main {
     width: 100%;
     height: 87vh;
     border-bottom: 1px dashed var(--primary-color);
 }
-.main .circle1,.main .circle{
-
+.main .circle1,
+.main .circle {
 }
-.sec1 .btns{
+.sec1 .btns {
     width: 100%;
     padding-top: 2rem;
     display: flex;
@@ -63,19 +63,19 @@ h1{
     justify-content: center;
     padding-bottom: 2rem;
 }
-.sec1 .btns .btn{
+.sec1 .btns .btn {
     border: 2px dashed var(--primary-color);
     background: var(--background-color);
     color: var(--primary-color);
 }
-.sec1 .btns .btn1{
+.sec1 .btns .btn1 {
     margin-right: 3rem;
 }
-.sec1 .content{
+.sec1 .content {
     text-align: center;
     padding-bottom: 2rem;
 }
-.sec1 .content::after{
+.sec1 .content::after {
     content: "";
     animation: cursor 800ms infinite;
     background: var(--primary-color);
@@ -86,20 +86,32 @@ h1{
     width: 3px;
     bottom: -2px;
     position: relative;
-  }
-.sec2,.sec3,.sec4,.sec5{
+}
+.sec2,
+.sec3,
+.sec4,
+.sec5 {
     width: 100%;
     padding-top: 2rem;
 }
-.sec2 .dot-line{
+.sec2 .dot-line {
     width: 20%;
     border-bottom: 1px dashed var(--primary-color);
 }
-footer{
+footer {
     border-top: 1px dashed var(--primary-color);
 }
-footer .copy{
+footer .copy {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+canvas {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: -1 !important;
+}
+
